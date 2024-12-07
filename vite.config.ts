@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     viteTsconfigPaths(),
   ],
-  base: "/currencies-test/",
+  base: "/gameshell-test/",
 })
