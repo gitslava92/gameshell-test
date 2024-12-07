@@ -5,9 +5,14 @@ import {Dayjs} from "dayjs";
 export const RootBox = styled(Box)(({theme}) => ({
   display: 'flex',
   alignItems: 'center',
-  justifyContent: 'space-between',
+  justifyContent: 'center',
   width: '100%',
-  padding: theme.spacing(2, 0)
+  padding: theme.spacing(2, 0),
+  gap: theme.spacing(2),
+  flexWrap: 'wrap',
+  [theme.breakpoints.up('sm')]: {
+    justifyContent: 'space-between',
+  }
 }));
 
 export const FlexBox = styled(Box)(({theme}) => ({

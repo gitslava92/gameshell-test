@@ -34,13 +34,19 @@ export const Text = styled(Typography)(({theme}) => ({
 
 export const ContactsBox = styled(Box)(({theme}) => ({
   display: 'flex',
-  gap: theme.spacing(2),
-  marginBottom: theme.spacing(4)
+  gap: theme.spacing(1),
+  marginBottom: theme.spacing(4),
+  flexWrap: 'wrap',
+  [theme.breakpoints.up('sm')]: {
+    flexWrap: 'nowrap',
+    gap: theme.spacing(2),
+  }
 }));
 
 export const Link = styled(MUILink)(({theme}) => ({
   display: 'flex',
   alignItems: 'center',
+  justifyContent: 'center',
   gap: theme.spacing(2),
   width: '100%',
   textDecoration: 'none',
@@ -48,5 +54,5 @@ export const Link = styled(MUILink)(({theme}) => ({
   cursor: 'pointer',
   '&:hover': {
     color: theme.palette.primary.main,
-  }
+  },
 }));
