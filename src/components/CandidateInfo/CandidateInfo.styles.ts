@@ -50,7 +50,7 @@ export const Link = styled(MUILink)(({theme}) => ({
   gap: theme.spacing(2),
   width: '100%',
   textDecoration: 'none',
-  color: theme.palette.primary.contrastText,
+  color: theme.palette.text.primary,
   cursor: 'pointer',
   '&:hover': {
     color: theme.palette.primary.main,

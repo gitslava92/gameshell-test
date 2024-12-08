@@ -2,6 +2,7 @@ import {createTheme} from "@mui/material";
 
 export const theme = createTheme({
     palette: {
+      mode: 'dark',
       divider: '#5b5b5b'
     },
     components: {

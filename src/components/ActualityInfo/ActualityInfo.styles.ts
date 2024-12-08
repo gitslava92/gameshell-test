@@ -23,7 +23,7 @@ export const FlexBox = styled(Box)(({theme}) => ({
 
 export const DateTimePicker = styled(MUIDateTimePicker)<DateTimePickerProps<Dayjs> & { value: Dayjs | null }>(({theme}) => ({
   '& .MuiOutlinedInput-root': {
-    color: theme.palette.primary.contrastText,
+    color: theme.palette.text.primary,
     '& .MuiInputAdornment-root': {
       button: {
         svg: {
